@@ -72,6 +72,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center text-sm text-zinc-500 py-10 border-t border-zinc-100">
+        <Link href={"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"} target="_blank">Terms of Use</Link>
+        <Link href={"https://khrona-pp-iosapp.netlify.app/"} target="_blank"> Privacy Policy</Link>
         <p>© {new Date().getFullYear()} Emanuele Di Pietro - Khrona</p>
       </footer>
     </main>
