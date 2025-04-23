@@ -38,6 +38,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-image: url("/grid-mobile.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Alternative smaller screens breakpoint if needed */
+@media (max-width: 480px) {
+  body {
+    background-image: url("/grid-mobile.png");
+    background-size: cover; /* or try values like 250% auto if needed */
+    background-position: center top; /* Adjust if you want to focus on a specific part */
+  }
+}
+
 @layer {
   .text-gradient {
     @apply bg-gradient-to-b from-zinc-900 to-zinc-700 text-transparent bg-clip-text
