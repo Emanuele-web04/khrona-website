@@ -3,13 +3,40 @@ import Image from "next/image";
 import { features } from "@/lib/features";
 import { FiMail } from "react-icons/fi";
 import { FaAppStore, FaApple } from "react-icons/fa";
-import FAQItem from "@/components/FAQItem";
 import FAQList from "@/components/FAQItem";
+import { navlinks } from "@/lib/navlinks";
 export default function Home() {
   return (
     <main className="min-h-screen text-zinc-900 font-sans flex flex-col">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center lg:min-h-screen text-center px-6 md:px-10 py-12 max-w-6xl mx-auto">
+      {/* Bottom Navigation Bar with Glassmorphism */}
+      <div className="z-10 fixed flex items-center justify-between px-4 py-4 mb-3 bottom-5 left-1/2 transform -translate-x-1/2 bg-neutral-100/10 backdrop-blur-lg ring-1 ring-neutral-200 rounded-xl shadow-lg max-w-md w-[90%] mx-auto">
+        <Link href={"#home"} className="flex items-center space-x-2">
+          <Image
+            alt="logo"
+            src={"/k3dblack.png"}
+            width={100}
+            height={100}
+            className="w-[20px] h-[20px] rounded-full"
+          />
+          <h3 className="font-medium">Khrona</h3>
+        </Link>
+
+        <div className="flex items-center space-x-6">
+          {navlinks.map((nav, i) => (
+            <div
+              key={i}
+              className="hover:text-(--korange) text-sm sm:text-base font-medium tracking-tight transition-colors"
+            >
+              <Link href={nav.path}>{nav.title}</Link>
+            </div>
+          ))}
+        </div>
+      </div>
+      <section
+        id="home"
+        className="flex flex-col items-center justify-center lg:min-h-screen text-center px-6 md:px-10 py-12 max-w-6xl mx-auto"
+      >
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex flex-col space-y-7 items-start">
             <div className="flex space-x-2 items-center">
@@ -22,7 +49,7 @@ export default function Home() {
               />
               <h6 className="font-bold text-lg tracking-wider">Khrona</h6>
             </div>
-            <h1 className="md:text-left text-center text-5xl lg:text-6xl font-black tra mb-6 tracking-tight">
+            <h1 className="md:text-left text-center text-5xl lg:text-6xl font-black mb-6 tracking-tight">
               <span className="text-gradient">Track your life.</span>{" "}
               <span className="text-gradient">Understand your</span>{" "}
               <span className="text-gradient">days.</span>
@@ -67,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Features Block */}
-      <section className="py-24  md:px-6">
+      <section id="features" className="py-24 md:px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-gradient w-full m-auto font-black mb-6 tracking-tight">
           Features
         </h1>
@@ -155,7 +182,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center py-12 px-4 border-t border-zinc-100">
-        <div className="container flex flex-col space-y-8 max-w-4xl md:py-16 my-15 mx-auto">
+        <div
+          id="faq"
+          className="container flex flex-col space-y-8 max-w-4xl md:py-16 my-15 mx-auto"
+        >
           <FAQList />
         </div>
         <div className="flex items-center text-zinc-600 justify-center space-x-3 mb-2">
