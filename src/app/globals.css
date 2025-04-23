@@ -3,12 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --korange: #F18665;
+}
+
+::selection {
+  background-color: var(--korange);
+  color: white
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-orange: var(--korange);
   --font-sans: var(--font-geist-sans);
+  --font-geist: var(--font-geist);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -20,7 +28,18 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background); /* Fallback color */
+  background-image: url("/grid3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer {
+  .text-gradient {
+    @apply bg-gradient-to-b from-zinc-900 to-zinc-700 text-transparent bg-clip-text
+  }
 }
