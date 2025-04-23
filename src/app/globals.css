@@ -49,7 +49,7 @@ body {
 /* Alternative smaller screens breakpoint if needed */
 @media (max-width: 768px) {
   body {
-    background-image: url("/grid3-mobile.png");
+    background-image: url("/grid-mobile.png");
     background-size: contain; /* Cambiato da cover a contain */
     background-repeat: repeat; /* Permette di ripetere l'immagine invece di allungarla */
     background-position: center;
