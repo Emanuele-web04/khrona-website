@@ -39,19 +39,19 @@ export default function Home() {
                   href={
                     "https://apps.apple.com/app/khrona-get-your-life-together/id6744410827"
                   }
-                  className="group flex ring-1 gap-2 items-center m-0 bg-gradient-to-b from-zinc-950 to-zinc-700 bg-zinc-900 text-white px-5 py-3 lg:px-6.5 lg:py-3.5 w-[200px] justify-center md:w-fit rounded-xl md:rounded-2xl hover:bg-zinc-800 transition-all duration-300"
+                  className="group flex ring-1 gap-2 items-center m-0 bg-gradient-to-b from-zinc-950 to-zinc-700 bg-zinc-900 text-white px-5 py-3 lg:px-6.5 lg:py-3.5 w-[220px] justify-center md:w-fit rounded-xl md:rounded-2xl hover:bg-zinc-800 transition-all duration-300"
                 >
-                  <FaApple className="md:w-5 md:h-5" />
-                  <span className="text-sm md:text-base">Download Now</span>
+                  <FaApple className="w-5 h-5" />
+                  <span className="text-base">Download Now</span>
                 </Link>
               </div>
               <div className="flex">
                 <Link
                   href={"mailto:manu.development.app@gmail.com"}
-                  className="group flex items-center gap-2 ring-1 ring-black bg-transparent text-black px-5 py-3 lg:px-6.5 lg:py-3.5 w-[200px] md:w-fit rounded-xl md:rounded-2xl justify-center hover:bg-zinc-800 transition-all duration-300"
+                  className="group flex items-center gap-2 ring-1 ring-black bg-transparent text-black px-5 py-3 lg:px-6.5 lg:py-3.5 w-[220px] md:w-fit rounded-xl md:rounded-2xl justify-center hover:bg-zinc-800 transition-all duration-300"
                 >
-                  <FiMail className="w-4 h-4" />
-                  <span className="text-sm md:text-base">Ask for support</span>
+                  <FiMail className="w-5 h-5" />
+                  <span className="text-base">Ask for support</span>
                 </Link>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
               href={"mailto:manu.development.app@gmail.com"}
               className="group inline-flex items-center justify-center gap-2 bg-transparent text-white border border-white/30 px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300"
             >
-              <FiMail className="w-4 h-4" />
+              <FiMail className="w-5 h-5" />
               <span>Contact Support</span>
             </Link>
           </div>
