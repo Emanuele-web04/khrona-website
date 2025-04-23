@@ -35,7 +35,10 @@ export default function Home() {
             <div className="flex flex-col gap-3 text-center items-center w-full justify-center md:justify-start md:flex-row ">
               <div className="flex">
                 <Link
-                  href={"mailto:manu.development.app@gmail.com"}
+                  target="_blank"
+                  href={
+                    "https://apps.apple.com/app/khrona-get-your-life-together/id6744410827"
+                  }
                   className="group flex ring-1 gap-2 items-center m-0 bg-gradient-to-b from-zinc-950 to-zinc-700 bg-zinc-900 text-white px-5 py-3 lg:px-6.5 lg:py-3.5 w-[200px] justify-center md:w-fit rounded-xl md:rounded-2xl hover:bg-zinc-800 transition-all duration-300"
                 >
                   <FaApple className="md:w-5 md:h-5" />
@@ -64,11 +67,11 @@ export default function Home() {
       </section>
 
       {/* Features Block */}
-      <section className="py-24 md:px-6">
+      <section className="py-24  md:px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center text-gradient w-full m-auto font-black mb-6 tracking-tight">
           Features
         </h1>
-        <p className="md:text-base lg:text-lg text-center font-geist tracking-tight m-auto max-w-xl  text-gray-600 leading-relaxed">
+        <p className="md:text-base px-4 md:p-0 lg:text-lg text-center font-geist tracking-tight m-auto max-w-xl  text-gray-600 leading-relaxed">
           Explore all the features. 35% more likely to reach personal goals with
           <span className="uppercase"> PRO</span> subscription. Embrace change.
         </p>
@@ -129,10 +132,14 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href={"#download-link"}
+              target="_blank"
+              href={
+                "https://apps.apple.com/app/khrona-get-your-life-together/id6744410827"
+              }
               className="group inline-flex items-center justify-center gap-2 bg-white text-zinc-900 px-8 py-4 rounded-full hover:bg-zinc-100 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaApple className="w-5 h-5" />
+
               <span className="font-medium">Download Now</span>
             </Link>
             <Link
