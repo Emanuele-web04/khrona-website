@@ -47,11 +47,12 @@ body {
 }
 
 /* Alternative smaller screens breakpoint if needed */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   body {
-    background-image: url("/grid-mobile.png");
-    background-size: cover; /* or try values like 250% auto if needed */
-    background-position: center top; /* Adjust if you want to focus on a specific part */
+    background-image: url("/grid3-mobile.png");
+    background-size: contain; /* Cambiato da cover a contain */
+    background-repeat: repeat; /* Permette di ripetere l'immagine invece di allungarla */
+    background-position: center;
   }
 }
 
